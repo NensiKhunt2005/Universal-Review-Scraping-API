@@ -1,0 +1,19 @@
+app:
+  name: "Universal Review Scraping API"
+  version: "1.0.0"
+
+scraper:
+  headless: true
+  implicitly_wait: 10
+  page_load_timeout: 30
+  retry_attempts: 3
+  max_pages_default: 5
+  max_reviews_default: 100
+
+storage:
+  default_export_format: "json"
+  export_dir: "exports"
+  sqlite_db_path: "scraper.db"
+
+logging:
+  level: "INFO"
