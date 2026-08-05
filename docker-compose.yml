@@ -1,0 +1,14 @@
+version: '3.8'
+
+services:
+  api:
+    build: .
+    container_name: universal_review_api
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./exports:/app/exports
+      - ./config:/app/config
+    environment:
+      - PYTHONUNBUFFERED=1
+    restart: unless-stopped
