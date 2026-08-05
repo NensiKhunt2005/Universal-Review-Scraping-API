@@ -1,0 +1,4 @@
+amazon:
+  see_all_reviews: "a[data-hook='see-all-reviews-link-foot']"
+  review_text: "span[data-hook='review-body']"
+  next_page: "li.a-last a"
