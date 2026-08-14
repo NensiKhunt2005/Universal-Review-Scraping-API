@@ -88,3 +88,6 @@ This API acts as an internal microservice and can be dynamically hooked to:
 - Next.js Dashboards
 - Fake Review Classifiers (BERT/Llama)
 - Browser Extensions
+
+
+@terminal: there are many reviews in this given page but it given 0 reviews in return check this issue properly

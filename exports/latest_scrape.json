@@ -1,8 +1,5 @@
 {
-    "website": "MockAmazonScraper",
-    "total_reviews": 2,
-    "reviews": [
-        "Mock Amazon Review 1",
-        "Mock Amazon Review 2"
-    ]
+    "website": "FlipkartScraper",
+    "total_reviews": 0,
+    "reviews": []
 }
