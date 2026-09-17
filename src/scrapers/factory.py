@@ -5,6 +5,7 @@ from src.scrapers.base import BaseScraper
 from src.scrapers.websites.amazon import AmazonScraper
 from src.scrapers.websites.flipkart import FlipkartScraper
 from src.scrapers.websites.generic import GenericScraper
+from src.scrapers.universal.universal_scraper import UniversalScraper
 
 
 def get_scraper_for_url(url: str) -> BaseScraper:
@@ -15,5 +16,5 @@ def get_scraper_for_url(url: str) -> BaseScraper:
     if "flipkart" in domain:
         return FlipkartScraper(url)
 
-    # Use Universal Config-Driven Scraper for anything else
-    return GenericScraper(url)
+    # Use site-independent UniversalScraper for all other domains
+    return UniversalScraper(url)
